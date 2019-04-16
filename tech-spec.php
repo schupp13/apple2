@@ -18,26 +18,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/tech.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-
-
-
-    <?php
-    $servername = "localhost";
-    $username = "schupp";
-    $password = "W53ZoOVSXmQk";
-    $dbname = "apple";
-
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    ?>
-
   </head>
 
   <body>
@@ -106,41 +89,57 @@ Narrow;"><i class="fas fa-shopping-bag"></i></a>
             <h4 class="section1-header">Macbook Pro</h4>
           </div>
           <div class="col-lg-6 section1-list-container">
-            <ul class="section1-list">
+            <ul class="section1-list d-flex justify-content-end">
               <li><a>Overview</a></li>
               <li><a>macOS</a></li>
               <li><a href='tech-spec.php'>Tech Spec</a></li>
+              <a href="#" ><button type="button" class="btn btn-primary btn-sm" style="border-radius:40%; padding:5px;">
+Buy</button></a>
             </ul>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section2">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 section2-col">
-            <hr>
-            <h2 class="section2-header">Add a trade-in</h2>
-            <p class="section2-p">Get a refund of up to $1100 when you trade in an eligible computer, or recycle it for free.*</p>
-            <a href="#">Get Started</a>
-            <hr>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section3">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h1 class="section3-header"><span>Choose your new MacBookPro<br>and select a finish.</span></h1>
-            <div class="mac-buttons">
-              <button type="button" name="button" class="macbookButton mac-13-inch-button">13-inch</button>
-              <button type="button" name="button" class="macbookButton mac-15-inch-button">15-inch</button>
+            <hr>
+            <div class="macButtons-tech-div">
+
+              <button type="button" name="button" class="macbookButton-tech mac-13-inch-button">13-inch</button>
+              <button type="button" name="button" class="macbookButton-tech mac-15-inch-button">15-inch</button>
+
             </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pictures-13">
+
+        <div class="row deflex justify-content-around">
+          <div class="col-sm-3">
+              <img src="img/13-no-bar.png" alt="" style="width:70%">
+          </div>
+          <div class="col-sm-3">
+            <img src="img/13-with-bar.png" alt=""  style="width:70%">
+          </div>
+        </div>
+
+      </div>
+      <div class="container">
+        <hr>
+        <div class="row d-flex justify-content-end">
+          <div class="col-sm-6">
+            <h5>Touch Bar</h5>
+          </div>
+          <div class="col-sm-6">
+            <p>Touch Bar with integrated Touch ID sensor</p>
           </div>
 
         </div>
       </div>
+
+
     </section>
